@@ -1,4 +1,4 @@
-# hypercode-java
+# hypecode-java
 
 Repositório de desafios Java (do básico ao especialista).  
 Cada participante cria uma pasta dentro de `users/` com o seu nome de usuário GitHub e registra o progresso nos arquivos `profile.md` e `progress.md`.
@@ -16,3 +16,4 @@ Quer contribuir?
 
 
 Leia `CONTRIBUTING.md` para detalhes.
+
