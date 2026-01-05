@@ -1,0 +1,28 @@
+name: Build Leaderboard and Publish
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 2 * * *' # diário às 02:00 UTC
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install deps
+        run: npm ci || true
+      - name: Generate leaderboard
+        run: |
+          # Exemplo: node scripts/generate-leaderboard.js
+          # O script varre /users, parseia progress.md e gera /docs/leaderboard.json e /docs/index.html
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
