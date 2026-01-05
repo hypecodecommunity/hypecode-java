@@ -1,4 +1,4 @@
-# Como participar — hypercode-java25
+# Como participar — hypecode-java
 
 1) Criando sua pasta de participante
 - Crie `users/<seu-github-username>/`.
@@ -39,4 +39,5 @@ completed: []
 
 5) Política de solução
 - Soluções devem ser colocadas em `users/<username>/solutions/<challenge-id>/`.
+
 - Se quiser, inclua um arquivo `explain.md` explicando a solução.
